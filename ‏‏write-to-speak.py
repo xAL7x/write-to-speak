@@ -2,6 +2,8 @@
 print("-------created by alhassan alharbi -------")
 from gtts import gTTS
 import os
-tts=gTTS('my name is hassan ',lang='en')
-tts.save('hassan.mp3')
-os.system("hassan.mp3")
+tts=gTTS(input("enter the text : "),lang=input("enter the languge --> "))
+a=input('enter the file name 》》》')
+tts.save(a+'.mp3')
+os.system(a+".mp3")
+
